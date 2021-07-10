@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Gif Bubble-Gif BubbleUITests/Pods-Gif Bubble-Gif BubbleUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Introspect/Introspect.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework

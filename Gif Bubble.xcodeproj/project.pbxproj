@@ -3,16 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BF282DC269961A700B90B02 /* Gif_BubbleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF282DB269961A700B90B02 /* Gif_BubbleApp.swift */; };
+		1A0FDE73D2DB60493A9E6612 /* Pods_Gif_BubbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCCFF902268E53AEEB97AC4 /* Pods_Gif_BubbleTests.framework */; };
+		4E1B0AC985CCC1959DE6DDE1 /* Pods_Gif_Bubble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C2A32124880A84F52C43DB /* Pods_Gif_Bubble.framework */; };
+		5BF282DC269961A700B90B02 /* GifBubbleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF282DB269961A700B90B02 /* GifBubbleApp.swift */; };
 		5BF282DE269961A700B90B02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF282DD269961A700B90B02 /* ContentView.swift */; };
 		5BF282E0269961A900B90B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF282DF269961A900B90B02 /* Assets.xcassets */; };
 		5BF282E3269961A900B90B02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF282E2269961A900B90B02 /* Preview Assets.xcassets */; };
-		5BF282EF269961A900B90B02 /* Gif_BubbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF282EE269961A900B90B02 /* Gif_BubbleTests.swift */; };
-		5BF282FA269961A900B90B02 /* Gif_BubbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF282F9269961A900B90B02 /* Gif_BubbleUITests.swift */; };
+		5BF282EF269961A900B90B02 /* GifBubbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF282EE269961A900B90B02 /* GifBubbleTests.swift */; };
+		5BF282FA269961A900B90B02 /* GifBubbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF282F9269961A900B90B02 /* GifBubbleUITests.swift */; };
+		5BF2830A2699632800B90B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF283092699632800B90B02 /* AppDelegate.swift */; };
+		5BF2830D269974C600B90B02 /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2830C269974C600B90B02 /* SearchResultViewModel.swift */; };
+		69ECAE960B7BFAC01EC1D30C /* Pods_Gif_Bubble_Gif_BubbleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5938ED60DE9DE19B796C73C3 /* Pods_Gif_Bubble_Gif_BubbleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,19 +38,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5938ED60DE9DE19B796C73C3 /* Pods_Gif_Bubble_Gif_BubbleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gif_Bubble_Gif_BubbleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF282D8269961A700B90B02 /* Gif Bubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gif Bubble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF282DB269961A700B90B02 /* Gif_BubbleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif_BubbleApp.swift; sourceTree = "<group>"; };
+		5BF282DB269961A700B90B02 /* GifBubbleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifBubbleApp.swift; sourceTree = "<group>"; };
 		5BF282DD269961A700B90B02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5BF282DF269961A900B90B02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BF282E2269961A900B90B02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5BF282E4269961A900B90B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF282E5269961A900B90B02 /* Gif_Bubble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gif_Bubble.entitlements; sourceTree = "<group>"; };
 		5BF282EA269961A900B90B02 /* Gif BubbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gif BubbleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF282EE269961A900B90B02 /* Gif_BubbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif_BubbleTests.swift; sourceTree = "<group>"; };
+		5BF282EE269961A900B90B02 /* GifBubbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifBubbleTests.swift; sourceTree = "<group>"; };
 		5BF282F0269961A900B90B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF282F5269961A900B90B02 /* Gif BubbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gif BubbleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF282F9269961A900B90B02 /* Gif_BubbleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif_BubbleUITests.swift; sourceTree = "<group>"; };
+		5BF282F9269961A900B90B02 /* GifBubbleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifBubbleUITests.swift; sourceTree = "<group>"; };
 		5BF282FB269961A900B90B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF283092699632800B90B02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BF2830C269974C600B90B02 /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		5DCCFF902268E53AEEB97AC4 /* Pods_Gif_BubbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gif_BubbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D86E1897D5F402B5BEC296 /* Pods-Gif Bubble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gif Bubble.debug.xcconfig"; path = "Target Support Files/Pods-Gif Bubble/Pods-Gif Bubble.debug.xcconfig"; sourceTree = "<group>"; };
+		767D8052C25ACB20F8BE6AB0 /* Pods-Gif BubbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gif BubbleTests.release.xcconfig"; path = "Target Support Files/Pods-Gif BubbleTests/Pods-Gif BubbleTests.release.xcconfig"; sourceTree = "<group>"; };
+		91C2A32124880A84F52C43DB /* Pods_Gif_Bubble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gif_Bubble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B4E46D62BCB2483E57CF8F /* Pods-Gif Bubble-Gif BubbleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gif Bubble-Gif BubbleUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gif Bubble-Gif BubbleUITests/Pods-Gif Bubble-Gif BubbleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0712E090671D8CA73C137B2 /* Pods-Gif Bubble-Gif BubbleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gif Bubble-Gif BubbleUITests.release.xcconfig"; path = "Target Support Files/Pods-Gif Bubble-Gif BubbleUITests/Pods-Gif Bubble-Gif BubbleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE07DFA37C1CA690B198208C /* Pods-Gif BubbleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gif BubbleTests.debug.xcconfig"; path = "Target Support Files/Pods-Gif BubbleTests/Pods-Gif BubbleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEAEB572FB9FC77F52FE77C1 /* Pods-Gif Bubble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gif Bubble.release.xcconfig"; path = "Target Support Files/Pods-Gif Bubble/Pods-Gif Bubble.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1B0AC985CCC1959DE6DDE1 /* Pods_Gif_Bubble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0FDE73D2DB60493A9E6612 /* Pods_Gif_BubbleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +85,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69ECAE960B7BFAC01EC1D30C /* Pods_Gif_Bubble_Gif_BubbleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5E9C02BE59A347BD4F216E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64D86E1897D5F402B5BEC296 /* Pods-Gif Bubble.debug.xcconfig */,
+				FEAEB572FB9FC77F52FE77C1 /* Pods-Gif Bubble.release.xcconfig */,
+				95B4E46D62BCB2483E57CF8F /* Pods-Gif Bubble-Gif BubbleUITests.debug.xcconfig */,
+				C0712E090671D8CA73C137B2 /* Pods-Gif Bubble-Gif BubbleUITests.release.xcconfig */,
+				CE07DFA37C1CA690B198208C /* Pods-Gif BubbleTests.debug.xcconfig */,
+				767D8052C25ACB20F8BE6AB0 /* Pods-Gif BubbleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5BF282CF269961A700B90B02 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +112,8 @@
 				5BF282ED269961A900B90B02 /* Gif BubbleTests */,
 				5BF282F8269961A900B90B02 /* Gif BubbleUITests */,
 				5BF282D9269961A700B90B02 /* Products */,
+				1A5E9C02BE59A347BD4F216E /* Pods */,
+				6C1E198E48D635A67465E10F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,12 +130,14 @@
 		5BF282DA269961A700B90B02 /* Gif Bubble */ = {
 			isa = PBXGroup;
 			children = (
-				5BF282DB269961A700B90B02 /* Gif_BubbleApp.swift */,
+				5BF282DB269961A700B90B02 /* GifBubbleApp.swift */,
 				5BF282DD269961A700B90B02 /* ContentView.swift */,
 				5BF282DF269961A900B90B02 /* Assets.xcassets */,
 				5BF282E4269961A900B90B02 /* Info.plist */,
 				5BF282E5269961A900B90B02 /* Gif_Bubble.entitlements */,
 				5BF282E1269961A900B90B02 /* Preview Content */,
+				5BF283092699632800B90B02 /* AppDelegate.swift */,
+				5BF2830C269974C600B90B02 /* SearchResultViewModel.swift */,
 			);
 			path = "Gif Bubble";
 			sourceTree = "<group>";
@@ -117,7 +153,7 @@
 		5BF282ED269961A900B90B02 /* Gif BubbleTests */ = {
 			isa = PBXGroup;
 			children = (
-				5BF282EE269961A900B90B02 /* Gif_BubbleTests.swift */,
+				5BF282EE269961A900B90B02 /* GifBubbleTests.swift */,
 				5BF282F0269961A900B90B02 /* Info.plist */,
 			);
 			path = "Gif BubbleTests";
@@ -126,10 +162,20 @@
 		5BF282F8269961A900B90B02 /* Gif BubbleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5BF282F9269961A900B90B02 /* Gif_BubbleUITests.swift */,
+				5BF282F9269961A900B90B02 /* GifBubbleUITests.swift */,
 				5BF282FB269961A900B90B02 /* Info.plist */,
 			);
 			path = "Gif BubbleUITests";
+			sourceTree = "<group>";
+		};
+		6C1E198E48D635A67465E10F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91C2A32124880A84F52C43DB /* Pods_Gif_Bubble.framework */,
+				5938ED60DE9DE19B796C73C3 /* Pods_Gif_Bubble_Gif_BubbleUITests.framework */,
+				5DCCFF902268E53AEEB97AC4 /* Pods_Gif_BubbleTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,15 +185,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BF282FE269961A900B90B02 /* Build configuration list for PBXNativeTarget "Gif Bubble" */;
 			buildPhases = (
+				C7119C3BBB48423E9ADF0F73 /* [CP] Check Pods Manifest.lock */,
 				5BF282D4269961A700B90B02 /* Sources */,
 				5BF282D5269961A700B90B02 /* Frameworks */,
 				5BF282D6269961A700B90B02 /* Resources */,
+				5BF2830B26996B6600B90B02 /* ShellScript */,
+				78BA40CC62E48B976320A88C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Gif Bubble";
+			packageProductDependencies = (
+			);
 			productName = "Gif Bubble";
 			productReference = 5BF282D8269961A700B90B02 /* Gif Bubble.app */;
 			productType = "com.apple.product-type.application";
@@ -156,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BF28301269961A900B90B02 /* Build configuration list for PBXNativeTarget "Gif BubbleTests" */;
 			buildPhases = (
+				DEF86E191A0262D10E373ED8 /* [CP] Check Pods Manifest.lock */,
 				5BF282E6269961A900B90B02 /* Sources */,
 				5BF282E7269961A900B90B02 /* Frameworks */,
 				5BF282E8269961A900B90B02 /* Resources */,
@@ -174,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BF28304269961A900B90B02 /* Build configuration list for PBXNativeTarget "Gif BubbleUITests" */;
 			buildPhases = (
+				492BD883DA4AC355B60CB568 /* [CP] Check Pods Manifest.lock */,
 				5BF282F1269961A900B90B02 /* Sources */,
 				5BF282F2269961A900B90B02 /* Frameworks */,
 				5BF282F3269961A900B90B02 /* Resources */,
+				7FF1AFF7BAF88F43A63A3204 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +273,8 @@
 				Base,
 			);
 			mainGroup = 5BF282CF269961A700B90B02;
+			packageReferences = (
+			);
 			productRefGroup = 5BF282D9269961A700B90B02 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,13 +312,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		492BD883DA4AC355B60CB568 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gif Bubble-Gif BubbleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BF2830B26996B6600B90B02 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		78BA40CC62E48B976320A88C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gif Bubble/Pods-Gif Bubble-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gif Bubble/Pods-Gif Bubble-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gif Bubble/Pods-Gif Bubble-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FF1AFF7BAF88F43A63A3204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gif Bubble-Gif BubbleUITests/Pods-Gif Bubble-Gif BubbleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gif Bubble-Gif BubbleUITests/Pods-Gif Bubble-Gif BubbleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gif Bubble-Gif BubbleUITests/Pods-Gif Bubble-Gif BubbleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7119C3BBB48423E9ADF0F73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gif Bubble-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF86E191A0262D10E373ED8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gif BubbleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BF282D4269961A700B90B02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF2830A2699632800B90B02 /* AppDelegate.swift in Sources */,
 				5BF282DE269961A700B90B02 /* ContentView.swift in Sources */,
-				5BF282DC269961A700B90B02 /* Gif_BubbleApp.swift in Sources */,
+				5BF282DC269961A700B90B02 /* GifBubbleApp.swift in Sources */,
+				5BF2830D269974C600B90B02 /* SearchResultViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF282EF269961A900B90B02 /* Gif_BubbleTests.swift in Sources */,
+				5BF282EF269961A900B90B02 /* GifBubbleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF282FA269961A900B90B02 /* Gif_BubbleUITests.swift in Sources */,
+				5BF282FA269961A900B90B02 /* GifBubbleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +593,7 @@
 		};
 		5BF282FF269961A900B90B02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D86E1897D5F402B5BEC296 /* Pods-Gif Bubble.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -431,6 +610,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nestederror.Gif-Bubble";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -439,6 +619,7 @@
 		};
 		5BF28300269961A900B90B02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEAEB572FB9FC77F52FE77C1 /* Pods-Gif Bubble.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +636,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nestederror.Gif-Bubble";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -463,6 +645,7 @@
 		};
 		5BF28302269961A900B90B02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE07DFA37C1CA690B198208C /* Pods-Gif BubbleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +668,7 @@
 		};
 		5BF28303269961A900B90B02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767D8052C25ACB20F8BE6AB0 /* Pods-Gif BubbleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +691,7 @@
 		};
 		5BF28305269961A900B90B02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B4E46D62BCB2483E57CF8F /* Pods-Gif Bubble-Gif BubbleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +712,7 @@
 		};
 		5BF28306269961A900B90B02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0712E090671D8CA73C137B2 /* Pods-Gif Bubble-Gif BubbleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
