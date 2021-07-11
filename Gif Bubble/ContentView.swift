@@ -97,18 +97,34 @@ struct ContentView: View {
                     NSApp.terminate(self)
                 }
             })
-            ScrollView {
-                LazyVGrid(columns: columns, content: {
-                    ForEach(searchResultViewModel.gifs, id: \.id) { gif in
-                        GifView(gif: gif).onAppear(perform: {
-                            if gif.id == searchResultViewModel.gifs.last?.id {
-                                searchResultViewModel.fetchMore()
-                            }
-                        })
-                    }
-                })
+            if searchResultViewModel.searchText == "" {
+                VStack {
+                    Image("AppIcon_256")
+                        .resizable()
+                        .frame(width: 128, height: 128, alignment: .center)
+                    Text("Type to search GIFs")
+                        .font(.largeTitle)
+                        .opacity(0.6)
+                }
+                .frame(minWidth: 0,
+                       maxWidth: .infinity,
+                       minHeight: 0,
+                       maxHeight: .infinity,
+                       alignment: .center)
+            } else {
+                ScrollView {
+                    LazyVGrid(columns: columns, content: {
+                        ForEach(searchResultViewModel.gifs, id: \.id) { gif in
+                            GifView(gif: gif).onAppear(perform: {
+                                if gif.id == searchResultViewModel.gifs.last?.id {
+                                    searchResultViewModel.fetchMore()
+                                }
+                            })
+                        }
+                    })
+                }
+                Spacer()
             }
-            Spacer()
         })
         .padding(10)
         .frame(width: 620, height: 720)
