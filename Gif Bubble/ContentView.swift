@@ -83,16 +83,16 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .center, spacing: nil/*@END_MENU_TOKEN@*/, content: {
             HStack(alignment: .top, spacing: 0, content: {
+                TextField("Search...", text: $searchResultViewModel.searchText)
+                    .introspectTextField { textField in
+                        textField.becomeFirstResponder()
+                    }
                 Picker(selection: .constant(1)/*@END_MENU_TOKEN@*/, label: Text("")) {
                     Text("Giphy").tag(1)
                 }
                 .disabled(true)
                 .labelsHidden()
                 .frame(width: 80)
-                TextField("Search...", text: $searchResultViewModel.searchText)
-                    .introspectTextField { textField in
-                        textField.becomeFirstResponder()
-                    }
             })
             ScrollView {
                 LazyVGrid(columns: columns, content: {
