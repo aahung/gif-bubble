@@ -32,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
             statusBarButton.target = self
         }
 
-        popover.contentSize = NSSize(width: 600, height: 800)
+        popover.contentSize = NSSize(width: 620, height: 820)
         popover.delegate = self
     }
 

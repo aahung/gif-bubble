@@ -106,7 +106,9 @@ struct ContentView: View {
                 })
             }
             Spacer()
-        }).frame(width: 600, height: 800)
+        })
+        .padding(10)
+        .frame(width: 620, height: 820)
     }
 }
 
