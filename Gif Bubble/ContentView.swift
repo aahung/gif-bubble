@@ -82,7 +82,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack(alignment: .center, spacing: nil/*@END_MENU_TOKEN@*/, content: {
-            HStack(alignment: .top, spacing: 0, content: {
+            HStack(alignment: .top, spacing: 5, content: {
                 TextField("Search...", text: $searchResultViewModel.searchText)
                     .introspectTextField { textField in
                         textField.becomeFirstResponder()
@@ -93,6 +93,9 @@ struct ContentView: View {
                 .disabled(true)
                 .labelsHidden()
                 .frame(width: 80)
+                Button("Quit") {
+                    NSApp.terminate(self)
+                }
             })
             ScrollView {
                 LazyVGrid(columns: columns, content: {
