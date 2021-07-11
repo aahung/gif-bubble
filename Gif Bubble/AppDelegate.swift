@@ -24,10 +24,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
 
         popover = NSPopover.init()
         statusBar = NSStatusBar.init()
-        statusItem = statusBar.statusItem(withLength: 28.0)
+        statusItem = statusBar.statusItem(withLength: 20.0)
 
         if let statusBarButton = statusItem.button {
-            statusBarButton.title = "GIF"
+            statusBarButton.title = ".g"
             statusBarButton.action = #selector(togglePopover(sender:))
             statusBarButton.target = self
         }
