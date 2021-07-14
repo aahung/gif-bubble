@@ -1,0 +1,22 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v2
+
+      - run: pod install
+      - uses: apple-actions/import-codesign-certs@v1
+        with:
+          p12-file-base64: ${{ secrets.CERTIFICATES_P12 }}
+          p12-password: ${{ secrets.CERTIFICATES_P12_PASSWORD }}
+      - run: |
+          xcodebuild -workspace ./Gif\ Bubble.xcworkspace/ \
+            -scheme Gif\ Bubble -sdk macosx -configuration Release install DSTROOT=build/root | xcpretty
