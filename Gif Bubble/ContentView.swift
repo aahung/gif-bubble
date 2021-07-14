@@ -32,7 +32,7 @@ struct GifImageActionRow: View {
                 }
                 Button("MD") {
                     NSPasteboard.general.clearContents()
-                    NSPasteboard.general.setString("![](\(gifImage.url)", forType: .string)
+                    NSPasteboard.general.setString("![](\(gifImage.url))", forType: .string)
                 }
             }
         }
