@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		5BF282FA269961A900B90B02 /* GifBubbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF282F9269961A900B90B02 /* GifBubbleUITests.swift */; };
 		5BF2830A2699632800B90B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF283092699632800B90B02 /* AppDelegate.swift */; };
 		5BF2830D269974C600B90B02 /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2830C269974C600B90B02 /* SearchResultViewModel.swift */; };
+		5BFC6FE826A958440095285C /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 5BFC6FE726A958440095285C /* KeyboardShortcuts */; };
+		5BFC6FEA26A959E70095285C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC6FE926A959E70095285C /* Constants.swift */; };
 		69ECAE960B7BFAC01EC1D30C /* Pods_Gif_Bubble_Gif_BubbleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5938ED60DE9DE19B796C73C3 /* Pods_Gif_Bubble_Gif_BubbleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,7 @@
 		5BF282FB269961A900B90B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF283092699632800B90B02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF2830C269974C600B90B02 /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		5BFC6FE926A959E70095285C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5DCCFF902268E53AEEB97AC4 /* Pods_Gif_BubbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gif_BubbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D86E1897D5F402B5BEC296 /* Pods-Gif Bubble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gif Bubble.debug.xcconfig"; path = "Target Support Files/Pods-Gif Bubble/Pods-Gif Bubble.debug.xcconfig"; sourceTree = "<group>"; };
 		767D8052C25ACB20F8BE6AB0 /* Pods-Gif BubbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gif BubbleTests.release.xcconfig"; path = "Target Support Files/Pods-Gif BubbleTests/Pods-Gif BubbleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E1B0AC985CCC1959DE6DDE1 /* Pods_Gif_Bubble.framework in Frameworks */,
+				5BFC6FE826A958440095285C /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +142,7 @@
 				5BF282E1269961A900B90B02 /* Preview Content */,
 				5BF283092699632800B90B02 /* AppDelegate.swift */,
 				5BF2830C269974C600B90B02 /* SearchResultViewModel.swift */,
+				5BFC6FE926A959E70095285C /* Constants.swift */,
 			);
 			path = "Gif Bubble";
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 			);
 			name = "Gif Bubble";
 			packageProductDependencies = (
+				5BFC6FE726A958440095285C /* KeyboardShortcuts */,
 			);
 			productName = "Gif Bubble";
 			productReference = 5BF282D8269961A700B90B02 /* Gif Bubble.app */;
@@ -274,6 +280,7 @@
 			);
 			mainGroup = 5BF282CF269961A700B90B02;
 			packageReferences = (
+				5BFC6FE626A958440095285C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			productRefGroup = 5BF282D9269961A700B90B02 /* Products */;
 			projectDirPath = "";
@@ -437,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BFC6FEA26A959E70095285C /* Constants.swift in Sources */,
 				5BF2830A2699632800B90B02 /* AppDelegate.swift in Sources */,
 				5BF282DE269961A700B90B02 /* ContentView.swift in Sources */,
 				5BF282DC269961A700B90B02 /* GifBubbleApp.swift in Sources */,
@@ -771,6 +779,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5BFC6FE626A958440095285C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BFC6FE726A958440095285C /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BFC6FE626A958440095285C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5BF282D0269961A700B90B02 /* Project object */;
 }

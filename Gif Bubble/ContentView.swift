@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Introspect
+import KeyboardShortcuts
 import SDWebImageSwiftUI
 
 let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 4)
@@ -93,6 +94,7 @@ struct ContentView: View {
                 .disabled(true)
                 .labelsHidden()
                 .frame(width: 80)
+                KeyboardShortcuts.Recorder(for: .togglePopover)
                 Button("Quit") {
                     NSApp.terminate(self)
                 }

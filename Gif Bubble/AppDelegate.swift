@@ -8,6 +8,7 @@
 import SwiftUI
 import AppKit
 import SDWebImage
+import KeyboardShortcuts
 
 class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
     private var statusBar: NSStatusBar!
@@ -34,6 +35,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
 
         popover.contentSize = NSSize(width: 620, height: 720)
         popover.delegate = self
+
+        KeyboardShortcuts.onKeyUp(for: .togglePopover) { [self] in
+            togglePopover(sender: self)
+        }
     }
 
     @objc func togglePopover(sender: AnyObject) {
