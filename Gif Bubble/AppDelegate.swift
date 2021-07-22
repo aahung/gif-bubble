@@ -16,6 +16,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
     private var popover: NSPopover!
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        // hide dock icon
+        NSApp.setActivationPolicy(.accessory)
+
         let imageCache = SDImageCache()
         imageCache.config.maxDiskSize = 1
         imageCache.config.shouldCacheImagesInMemory = false
